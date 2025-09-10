@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Cahya Ningrat</title>
+<style>
+:root {
+    --primary: #ff5722;
+    --accent: #607d8b;
+    --bg: #fce4ec;
+    --text: #212121;
+}
+
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    text-shadow: 2px 2px var(--accent);
+}
+
+.bio-card {
+    background-color: white;
+    border: 4px dashed var(--accent);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.bio-card::before {
+    content: "👹";
+    font-size: 5rem;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    transform: rotate(20deg);
+    opacity: 0.2;
+}
+
+.bio-card img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    margin-bottom: 1rem;
+}
+
+.bio-card h2 {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.bio-card p {
+    margin: 0.5rem 0;
+}
+
+.swim {
+    display: inline-block;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.roast {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Cahya Ningrat</h1>
+    <p>Biodata Goblin Edition 😈</p>
+</header>
+
+<div class="bio-card">
+    <img src="https://i.imgur.com/3vGQx7y.png" alt="Goblin Face">
+    <h2>Cahya Ningrat</h2>
+    <p><strong>Hobi:</strong> <span class="swim">🏊 Berenang di air (mungkin buat kabur dari kenyataan)</span></p>
+    <p><strong>Wajah:</strong> Goblin (ya, ini asli, bukan filter TikTok)</p>
+    <p><strong>Kepribadian:</strong> Unik, sedikit menyebalkan, tapi tetap lucu</p>
+    <p class="roast">Peringatan: Lihat terlalu lama bisa membuatmu merasa inferior 😎</p>
+    <p class="roast">Keahlian utama: Menghilang saat diminta bantu kerjaan 😜</p>
+</div>
+
+<footer>
+    &copy; 2025 Cahya Ningrat. Goblin resmi bersertifikat.
+</footer>
+
+</body>
+</html>
